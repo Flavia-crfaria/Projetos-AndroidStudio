@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:textStyle="bold"
+            android:textColor="#6200EE"
+            android:text="LISTA DE COMPRAS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkArroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arroz 1 Kg - R$ 2,69"
+            android:textSize="18dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <CheckBox
+            android:id="@+id/checkLeite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Leite longa vida - R$ 2,70"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <CheckBox
+            android:id="@+id/checkCarne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carne Friboi - R$ 16,70"
+            android:textSize="18dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <CheckBox
+            android:id="@+id/checkFeijao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Feijão carioquinha 1 Kg - R$ 3,38"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <CheckBox
+            android:id="@+id/checkRefri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Refrigerante Coca-Cola 2L - R$ 3,00"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Calcular Total"
+            android:textSize="18dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+</ScrollView>
