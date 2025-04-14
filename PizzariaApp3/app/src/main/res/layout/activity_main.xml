@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/borda"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monte sua Pizza 🍕"
+        android:textSize="22sp"
+        android:textColor="#6200EE"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha os sabores:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox android:id="@+id/checkCalabresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calabresa" />
+
+    <CheckBox android:id="@+id/checkMussarela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mussarela" />
+
+    <CheckBox android:id="@+id/checkPortuguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portuguesa" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamanho da pizza:"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <RadioGroup android:id="@+id/radioGrupoTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:id="@+id/radioPequena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pequena" />
+
+        <RadioButton android:id="@+id/radioMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média" />
+
+        <RadioButton android:id="@+id/radioGrande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grande" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de pagamento:"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <RadioGroup android:id="@+id/radioGrupoPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:id="@+id/radioPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pix" />
+
+        <RadioButton android:id="@+id/radioCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartão de Crédito" />
+
+        <RadioButton android:id="@+id/radioDinheiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinheiro" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Pedido"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"/>
+</LinearLayout>
